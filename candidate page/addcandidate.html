@@ -1,226 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Add Candidate</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css" />
-    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css" />
-    <link rel="stylesheet" href="../../assets/vendors/select2/select2.min.css" />
-    <link rel="stylesheet" href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-  </head>
-  <body>
-    <div class="container-scroller">
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
-          <a class="sidebar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
-        </div>
-        <ul class="nav">
-          <li class="nav-item nav-profile">
-            <a href="#" class="nav-link">
-              <div class="nav-profile-image">
-                <img src="../../assets/images/faces/face1.jpg" alt="profile" />
-                <span class="login-status online"></span>
-                <!--change to offline or busy as needed-->
-              </div>
-              <div class="nav-profile-text d-flex flex-column pr-3">
-                <span class="font-weight-medium mb-2">Henry Klein</span>
-                <span class="font-weight-normal">$8,753.00</span>
-              </div>
-              <span class="badge badge-danger text-white ml-3 rounded">3</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">
-              <i class="mdi mdi-home menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              <span class="menu-title">Basic UI Elements</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a>
-                </li>
-              </ul>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- 356 line avalabel css files and js files links -->
+  <!--  -->
+  <title>Admin/AddCandidate</title>
+  <link rel="stylesheet" href=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+x<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+</script>
+
+
+<link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css" />
+<link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css" />
+<link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css" />
+<link rel="stylesheet" href="../../assets/vendors/select2/select2.min.css" />
+<link rel="stylesheet" href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/css/style.css" />
+<link rel="shortcut icon" href="../../assets/images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
+        <a class="sidebar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item nav-profile">
+          <a href="#" class="nav-link">
+            <div class="nav-profile-image">
+              <img src="../../assets/images/faces/face1.jpg" alt="profile" />
+              <span class="login-status online"></span>
+              <!--change to offline or busy as needed-->
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/icons/mdi.html">
-              <i class="mdi mdi-contacts menu-icon"></i>
-              <span class="menu-title">Icons</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/forms/basic_elements.html">
-              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-              <span class="menu-title">Forms</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/charts/chartjs.html">
-              <i class="mdi mdi-chart-bar menu-icon"></i>
-              <span class="menu-title">Charts</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/tables/basic-table.html">
-              <i class="mdi mdi-table-large menu-icon"></i>
-              <span class="menu-title">Tables</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link" href="#">
-              <span class="menu-title">Docs</span>
-            </span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.bootstrapdash.com/demo/breeze-free/documentation/documentation.html">
-              <i class="mdi mdi-file-document-box menu-icon"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
-          <li class="nav-item sidebar-actions">
-            <div class="nav-link">
-              <div class="mt-4">
-                <div class="border-none">
-                  <p class="text-black">Notification</p>
-                </div>
-                <ul class="mt-4 pl-0">
-                  <li>Sign Out</li>
-                </ul>
-              </div>
+            <div class="nav-profile-text d-flex flex-column pr-3">
+              <span class="font-weight-medium mb-2">Henry Klein</span>
+              <span class="font-weight-normal">$8,753.00</span>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="container-fluid page-body-wrapper">
-        <div id="theme-settings" class="settings-panel">
-          <i class="settings-close mdi mdi-close"></i>
-          <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-default-theme">
-            <div class="img-ss rounded-circle bg-light border mr-3"></div> Default
-          </div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme">
-            <div class="img-ss rounded-circle bg-dark border mr-3"></div> Dark
-          </div>
-          <p class="settings-heading mt-2">HEADER SKINS</p>
-          <div class="color-tiles mx-0 px-4">
-            <div class="tiles light"></div>
-            <div class="tiles dark"></div>
-          </div>
-        </div>
-        <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
-          <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
-            <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
-            <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
-              <i class="mdi mdi-menu"></i>
-            </button>
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                  <i class="mdi mdi-bell-outline"></i>
-                  <span class="count count-varient1">7</span>
-                </a>
-                <div class="dropdown-menu navbar-dropdown navbar-dropdown-large preview-list" aria-labelledby="notificationDropdown">
-                  <h6 class="p-3 mb-0">Notifications</h6>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="../../assets/images/faces/face4.jpg" alt="" class="profile-pic" />
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="mb-0"> Dany Miles <span class="text-small text-muted">commented on your photo</span>
-                      </p>
-                    </div>
-                  </a>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="../../assets/images/faces/face3.jpg" alt="" class="profile-pic" />
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="mb-0"> James <span class="text-small text-muted">posted a photo on your wall</span>
-                      </p>
-                    </div>
-                  </a>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="../../assets/images/faces/face2.jpg" alt="" class="profile-pic" />
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="mb-0"> Alex <span class="text-small text-muted">just mentioned you in his post</span>
-                      </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0">View all activities</p>
-                </div>
+            <span class="badge badge-danger text-white ml-3 rounded">3</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">
+            <i class="mdi mdi-home menu-icon"></i>
+            <span class="menu-title">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            <span class="menu-title">Basic UI Elements</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a>
               </li>
-              <li class="nav-item dropdown d-none d-sm-flex">
-                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown">
-                  <i class="mdi mdi-email-outline"></i>
-                  <span class="count count-varient2">5</span>
-                </a>
-                <div class="dropdown-menu navbar-dropdown navbar-dropdown-large preview-list" aria-labelledby="messageDropdown">
-                  <h6 class="p-3 mb-0">Messages</h6>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-item-content flex-grow">
-                      <span class="badge badge-pill badge-success">Request</span>
-                      <p class="text-small text-muted ellipsis mb-0"> Suport needed for user123 </p>
-                    </div>
-                    <p class="text-small text-muted align-self-start"> 4:10 PM </p>
-                  </a>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-item-content flex-grow">
-                      <span class="badge badge-pill badge-warning">Invoices</span>
-                      <p class="text-small text-muted ellipsis mb-0"> Invoice for order is mailed </p>
-                    </div>
-                    <p class="text-small text-muted align-self-start"> 4:10 PM </p>
-                  </a>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-item-content flex-grow">
-                      <span class="badge badge-pill badge-danger">Projects</span>
-                      <p class="text-small text-muted ellipsis mb-0"> New project will start tomorrow </p>
-                    </div>
-                    <p class="text-small text-muted align-self-start"> 4:10 PM </p>
-                  </a>
-                  <h6 class="p-3 mb-0">See all activity</h6>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a>
               </li>
-              <li class="nav-item nav-search border-0 ml-1 ml-md-3 ml-lg-5 d-none d-md-flex">
-                <form class="nav-link form-inline mt-2 mt-md-0">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" />
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="mdi mdi-magnify"></i>
-                      </span>
-                    </div>
-                  </div>
-                </form>
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a>
               </li>
             </ul>
-            <ul class="navbar-nav navbar-nav-right ml-lg-auto">
-              <li class="nav-item dropdown d-none d-xl-flex border-0">
-                <a class="nav-link dropdown-toggle" id="languageDropdown" href="#" data-toggle="dropdown">
-                  <i class="mdi mdi-earth"></i> English </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/icons/mdi.html">
+            <i class="mdi mdi-contacts menu-icon"></i>
+            <span class="menu-title">Icons</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/forms/basic_elements.html">
+            <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            <span class="menu-title">Forms</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/charts/chartjs.html">
+            <i class="mdi mdi-chart-bar menu-icon"></i>
+            <span class="menu-title">Charts</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/tables/basic-table.html">
+            <i class="mdi mdi-table-large menu-icon"></i>
+            <span class="menu-title">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#">
+            <span class="menu-title">Docs</span>
+          </span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.bootstrapdash.com/demo/breeze-free/documentation/documentation.html">
+            <i class="mdi mdi-file-document-box menu-icon"></i>
+            <span class="menu-title">Documentation</span>
+          </a>
+        </li>
+        <li class="nav-item sidebar-actions">
+          <div class="nav-link">
+            <div class="mt-4">
+              <div class="border-none">
+                <p class="text-black">Notification</p>
+              </div>
+              <ul class="mt-4 pl-0">
+                <li>Sign Out</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid page-body-wrapper">
+      <div id="theme-settings" class="settings-panel">
+        <i class="settings-close mdi mdi-close"></i>
+        <p class="settings-heading">SIDEBAR SKINS</p>
+        <div class="sidebar-bg-options selected" id="sidebar-default-theme">
+          <div class="img-ss rounded-circle bg-light border mr-3"></div> Default
+        </div>
+        <div class="sidebar-bg-options" id="sidebar-dark-theme">
+          <div class="img-ss rounded-circle bg-dark border mr-3"></div> Dark
+        </div>
+        <p class="settings-heading mt-2">HEADER SKINS</p>
+        <div class="color-tiles mx-0 px-4">
+          <div class="tiles light"></div>
+          <div class="tiles dark"></div>
+        </div>
+      </div>
+      <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+        <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
+          <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+          <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
+            <i class="mdi mdi-menu"></i>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count count-varient1">7</span>
+              </a>
+              <div class="dropdown-menu navbar-dropdown navbar-dropdown-large preview-list" aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0">Notifications</h6>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/faces/face4.jpg" alt="" class="profile-pic" />
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="mb-0"> Dany Miles <span class="text-small text-muted">commented on your photo</span>
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/faces/face3.jpg" alt="" class="profile-pic" />
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="mb-0"> James <span class="text-small text-muted">posted a photo on your wall</span>
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/faces/face2.jpg" alt="" class="profile-pic" />
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="mb-0"> Alex <span class="text-small text-muted">just mentioned you in his post</span>
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <p class="p-3 mb-0">View all activities</p>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-none d-sm-flex">
+              <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count count-varient2">5</span>
+              </a>
+              <div class="dropdown-menu navbar-dropdown navbar-dropdown-large preview-list" aria-labelledby="messageDropdown">
+                <h6 class="p-3 mb-0">Messages</h6>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow">
+                    <span class="badge badge-pill badge-success">Request</span>
+                    <p class="text-small text-muted ellipsis mb-0"> Suport needed for user123 </p>
+                  </div>
+                  <p class="text-small text-muted align-self-start"> 4:10 PM </p>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow">
+                    <span class="badge badge-pill badge-warning">Invoices</span>
+                    <p class="text-small text-muted ellipsis mb-0"> Invoice for order is mailed </p>
+                  </div>
+                  <p class="text-small text-muted align-self-start"> 4:10 PM </p>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow">
+                    <span class="badge badge-pill badge-danger">Projects</span>
+                    <p class="text-small text-muted ellipsis mb-0"> New project will start tomorrow </p>
+                  </div>
+                  <p class="text-small text-muted align-self-start"> 4:10 PM </p>
+                </a>
+                <h6 class="p-3 mb-0">See all activity</h6>
+              </div>
+            </li>
+            <li class="nav-item nav-search border-0 ml-1 ml-md-3 ml-lg-5 d-none d-md-flex">
+              <form class="nav-link form-inline mt-2 mt-md-0">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" />
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-nav-right ml-lg-auto">
+            <li class="nav-item dropdown d-none d-xl-flex border-0">
+              <a class="nav-link dropdown-toggle" id="languageDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-earth"></i> English </a>
                 <div class="dropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
                   <a class="dropdown-item" href="#"> French </a>
                   <a class="dropdown-item" href="#"> Spain </a>
@@ -236,570 +247,225 @@
                 <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
                   <a class="dropdown-item" href="#">
                     <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+                    </div>
+                  </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                  <span class="mdi mdi-menu"></span>
+                </button>
+              </div>
+            </nav>
+            <div class="main-panel">
+              <div class="content-wrapper">
+                <div class="page-header">
+                  <h3 class="page-title">Candidate Management</h3>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"> Add Candidate </li>
+                    </ol>
+                  </nav>
                 </div>
-              </li>
-            </ul>
-            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-              <span class="mdi mdi-menu"></span>
-            </button>
-          </div>
-        </nav>
-        <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Form elements</h3>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Form elements </li>
-                </ol>
-              </nav>
-            </div>
+                <div class="col-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      
+                     
 
+                     <link rel="stylesheet" href="style.css" />
+                     <script src="script.js" defer></script>
 
+                     <!-- form satrts here  -->
 
-              
-<form action="#" class="form">
-      <h1 class="text-center">Registration Form</h1>
-      <!-- Progress bar -->
-      <div class="progressbar">
-        <div class="progress" id="progress"></div>
-        
-        <div
-          class="progress-step progress-step-active"
-          data-title="Intro"
-        ></div>
-        <div class="progress-step" data-title="Contact"></div>
-        <div class="progress-step" data-title="ID"></div>
-        <div class="progress-step" data-title="Password"></div>
-      </div>
-
-      <!-- Steps -->
-      <div class="form-step form-step-active">
-        <div class="input-group">
-          <label for="username">Fisrtname</label>
-          <input type="text" name="username" id="username" />
-        </div>
-        <div class="input-group">
-          <label for="username">Lastname</label>
-          <input type="text" name="username" id="username" />
-        </div>
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </div>
-
-        
- <div class="input-group">
-          <label>Gender</label>
-         <select
-          id="status" name="gender">
-
-          <option value="Select">Select</option>
-          <option value="Male">Male</option>
-          <option value="FeMale">FeMale</option>
-          <option value="Others">Others</option>
-        </select>
-      </div>
-        <div class="">
-          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
-        </div>
-      </div>
-      <div class="form-step">
-        <div class="input-group">
-          <label for="phone">Phone</label>
-          <input type="text" name="phone" id="phone" />
-        </div>
-        <!--  -->
-         <div class="input-group">
-          <label for="phone">Alternative PhoneNum</label>
-          <input type="text" name="phone" id="phone" />
-        </div>
-        <div class="input-group">
-          <label for="username">Peramennt Address</label>
-          <input type="text" name="username" id="username" />
-        </div>
-
-        <!--  -->
-        <div class="input-group">
-          <label for="Temporary Address">Temporary Address</label>
-          <input type="text" name="tAddress" id="tAddress" />
-        </div>
-        <div class="btns-group">
-          <a href="#" class="btn btn-prev">Previous</a>
-          <a href="#" class="btn btn-next">Next</a>
-        </div>
-      </div>
-      <div class="form-step">
-        <div class="input-group">
-          <label for="dob">Date of Birth</label>
-          <input type="date" name="dob" id="dob" />
-        </div>
-<!--  -->
-
-         <div class="input-group">
-          <label>Job Type</label>
-         <select
-          id="status" name="jobType">
-
-          <option value="Select">Select</option>
-          <option value="Permanent">Permanent</option>
-          <option value="Full Time">Full Time</option>
-          <option value="Contaract">Contaract</option>
-        </select>
-      </div>
-      
-
-        <div class="input-group">
-         <label>Job Role</label>
-          <select
-          id="jobRole" name="jobRole">
-                   <option value="Select">Select</option>
-                    <option value="java Developer">java Developer</option>
-                    <option value="Python developer">Python developer</option>
-                    <option value="UI developer">UI developer</option>
-                </select>
-            </div>   
-
-
-
-              <div class="input-group">
-         <label>Experience</label>
-                 <select
-                    id="experience" name="experience">
-
-                    <option value="Select">Select</option>
-
-                    <option value="Fresher">Fresher</option>
-                    <option value="one year">one year</option>
-                    <option value="Two years">Two years</option>
-                    <option value="Three years">Three years</option>
-
-                    <option value="Four Above">Four Above</option>
-                </select>
-            </div>
-        <div class="btns-group">
-          <a href="#" class="btn btn-prev">Previous</a>
-          <a href="#" class="btn btn-next">Next</a>
-        </div>
-      </div>
-      <div class="form-step">
-<!--  -->
-<div class="input-group">
-         <label for="Write About Us">Write About Us</label>
-             <input
-                    type="text" th:field="*{about}" class="form-control" id="about"
-                    placeholder="Write About"> <span
-                    th:if="${#fields.hasErrors('about')}" th:errors="*{about}"
-                    class="text-danger"></span>
-            </div>
-
-            <div class="input-group">
-         <label for="Write About Us">Interview Status</label>
-            
-                <select id="status" name="status">
-
-                    <option value="Select">Select</option>
-                    <option value="Ready to take Interview">Ready to take
-                        Interview</option>
-                    <option value="Interview Completed">Interview Completed</option>
-                    <option value="Postponed Interview">Postponed Interview</option>
-                    <option value="Not eligible">Not eligible</option>
-                    <option value="Selected">Selected</option>
-                </select>
-            </div>
-        <div class="btns-group">
-          <a href="#" class="btn btn-prev">Previous</a>
-          <input type="submit" value="Submit" class="btn" />
-        </div>
-      </div>
-    </form>
-
-
-
-
-
-
-
-
-
-
-            <div class="row">
-              <div class="col-md-6 grid-margin stretch-card">
-              </div>
-              <div class="col-12 grid-margin">
-                <div class="card">
-                 <!--  <div class="card-body">
-                    <h4 class="card-title">Candidate Add</h4> -->
-                    <!-- <form class="form-sample">
-                      <p class="card-description">Personal info</p>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">First Name</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
+                     <div class="container" style="color:#5c85d6">
+                      <form action="#"  class="forms-sample">
+                        <h1 class="text-center">Candidate Info</h1>
+                        <!-- Progress bar -->
+                        <div class="progressbar">
+                          <div class="progress" id="progress"></div>
+                          
+                          <div
+                          class="progress-step progress-step-active"
+                          data-title="Intro"
+                          ></div>
+                          <div class="progress-step" data-title="Personnel Info"></div>
+                          <div class="progress-step" data-title="Skills"></div>
+                          <div class="progress-step" data-title="Finish"></div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Last Name</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
+
+                        <!-- Steps -->
+                        <div class="form-step form-step-active">
+                          <div class="input-group">
+                            <label for="username">Fisrtname</label>
+                            <input type="text" name="username" id="username" />
                           </div>
+                          <div class="input-group">
+                            <label for="username">Lastname</label>
+                            <input type="text" name="username" id="username" />
+                          </div>
+                          <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" />
+                          </div>
+
+                          
+                          <div class="input-group">
+                            <label>Gender</label>
+                            <select
+                            id="status" name="gender">
+
+                            <option value="Select">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="FeMale">FeMale</option>
+                            <option value="Others">Others</option>
+                          </select>
+                        </div>
+                        <div class="">
+                          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Gender</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Male</option>
-                                <option>Female</option>
-                              </select>
-                            </div>
-                          </div>
+                      <div class="form-step">
+                        <div class="input-group">
+                          <label for="phone">Phone</label>
+                          <input type="text" name="phone" id="phone" />
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Date of Birth</label>
-                            <div class="col-sm-9">
-                              <input class="form-control" placeholder="dd/mm/yyyy" />
-                            </div>
-                          </div>
+                        <!--  -->
+                        <div class="input-group">
+                          <label for="phone">Alternative PhoneNum</label>
+                          <input type="text" name="phone" id="phone" />
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Category</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Category1</option>
-                                <option>Category2</option>
-                                <option>Category3</option>
-                                <option>Category4</option>
-                              </select>
-                            </div>
-                          </div>
+                        <div class="input-group">
+                          <label for="username">Peramennt Address</label>
+                          <input type="text" name="username" id="username" />
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Membership</label>
-                            <div class="col-sm-4">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked /> Free </label>
-                              </div>
-                            </div>
-                            <div class="col-sm-5">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2" /> Professional </label>
-                              </div>
-                            </div>
-                          </div>
+
+                        <!--  -->
+                        
+                        <div class="btns-group">
+                          <a href="#" class="btn btn-prev">Previous</a>
+                          <a href="#" class="btn btn-next" style="color:#193366">Next</a>
                         </div>
                       </div>
-                      <p class="card-description">Address</p>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Address 1</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
+                      <div class="form-step">
+                        <div class="input-group">
+                          <label for="Temporary Address">Temporary Address</label>
+                          <input type="text" name="tAddress" id="tAddress" />
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">State</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
+                        <div class="input-group">
+                          <label for="dob">Date of Birth</label>
+                          <input type="date" name="dob" id="dob" />
                         </div>
+                        <!--  -->
+
+                        <div class="input-group">
+                          <label>Job Type</label>
+                          <select
+                          id="status" name="jobType">
+
+                          <option value="Select">Select</option>
+                          <option value="Permanent">Permanent</option>
+                          <option value="Full Time">Full Time</option>
+                          <option value="Contaract">Contaract</option>
+                        </select>
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Address 2</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Postcode</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">City</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Country</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>America</option>
-                                <option>Italy</option>
-                                <option>Russia</option>
-                                <option>Britain</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form> -->
+                      
 
-<!--  -->
- <div class="main-panel">
-          <div class="content-wrapper pb-0">
-            <div class="page-header flex-wrap">
-              <h3 class="mb-0"> Hi, welcome back! <span class="pl-0 h6 pl-sm-2 text-muted d-inline-block">Your web analytics dashboard template.</span>
-              </h3>
-              <div class="d-flex">
-                <button type="button" class="btn btn-sm bg-white btn-icon-text border">
-                  <i class="mdi mdi-email btn-icon-prepend"></i> Email </button>
-                <button type="button" class="btn btn-sm bg-white btn-icon-text border ml-3">
-                  <i class="mdi mdi-printer btn-icon-prepend"></i> Print </button>
-                <button type="button" class="btn btn-sm ml-3 btn-success"> Add User </button>
-              </div>
-            </div>
-    <form class="form-sample">
-                      <p class="card-description">Personal info</p>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">First Name</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Last Name</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>  
-
-</form>
-
-<form action="#" class="form">
-      <h1 class="text-center">Registration Form</h1>
-      <!-- Progress bar -->
-      <div class="progressbar">
-        <div class="progress" id="progress"></div>
-        
-        <div
-          class="progress-step progress-step-active"
-          data-title="Intro"
-        ></div>
-        <div class="progress-step" data-title="Contact"></div>
-        <div class="progress-step" data-title="ID"></div>
-        <div class="progress-step" data-title="Password"></div>
-      </div>
-
-      <!-- Steps -->
-      <div class="form-step form-step-active">
-        <div class="input-group">
-          <label for="username">Fisrtname</label>
-          <input type="text" name="username" id="username" />
-        </div>
-        <div class="input-group">
-          <label for="username">Lastname</label>
-          <input type="text" name="username" id="username" />
-        </div>
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </div>
-
-        
- <div class="input-group">
-          <label>Gender</label>
-         <select
-          id="status" name="gender">
-
-          <option value="Select">Select</option>
-          <option value="Male">Male</option>
-          <option value="FeMale">FeMale</option>
-          <option value="Others">Others</option>
-        </select>
-      </div>
-        <div class="">
-          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
-        </div>
-      </div>
-      <div class="form-step">
-        <div class="input-group">
-          <label for="phone">Phone</label>
-          <input type="text" name="phone" id="phone" />
-        </div>
-        <!--  -->
-         <div class="input-group">
-          <label for="phone">Alternative PhoneNum</label>
-          <input type="text" name="phone" id="phone" />
-        </div>
-        <div class="input-group">
-          <label for="username">Peramennt Address</label>
-          <input type="text" name="username" id="username" />
-        </div>
-
-        <!--  -->
-        <div class="input-group">
-          <label for="Temporary Address">Temporary Address</label>
-          <input type="text" name="tAddress" id="tAddress" />
-        </div>
-        <div class="btns-group">
-          <a href="#" class="btn btn-prev">Previous</a>
-          <a href="#" class="btn btn-next">Next</a>
-        </div>
-      </div>
-      <div class="form-step">
-        <div class="input-group">
-          <label for="dob">Date of Birth</label>
-          <input type="date" name="dob" id="dob" />
-        </div>
-<!--  -->
-
-         <div class="input-group">
-          <label>Job Type</label>
-         <select
-          id="status" name="jobType">
-
-          <option value="Select">Select</option>
-          <option value="Permanent">Permanent</option>
-          <option value="Full Time">Full Time</option>
-          <option value="Contaract">Contaract</option>
-        </select>
-      </div>
-      
-
-        <div class="input-group">
-         <label>Job Role</label>
-          <select
-          id="jobRole" name="jobRole">
-                   <option value="Select">Select</option>
-                    <option value="java Developer">java Developer</option>
-                    <option value="Python developer">Python developer</option>
-                    <option value="UI developer">UI developer</option>
-                </select>
-            </div>   
+                      <div class="input-group">
+                       <label>Job Role</label>
+                       <select
+                       id="jobRole" name="jobRole">
+                       <option value="Select">Select</option>
+                       <option value="java Developer">java Developer</option>
+                       <option value="Python developer">Python developer</option>
+                       <option value="UI developer">UI developer</option>
+                     </select>
+                   </div>   
 
 
 
-              <div class="input-group">
-         <label>Experience</label>
-                 <select
-                    id="experience" name="experience">
-
-                    <option value="Select">Select</option>
-
-                    <option value="Fresher">Fresher</option>
-                    <option value="one year">one year</option>
-                    <option value="Two years">Two years</option>
-                    <option value="Three years">Three years</option>
-
-                    <option value="Four Above">Four Above</option>
-                </select>
-            </div>
-        <div class="btns-group">
-          <a href="#" class="btn btn-prev">Previous</a>
-          <a href="#" class="btn btn-next">Next</a>
-        </div>
-      </div>
-      <div class="form-step">
-<!--  -->
-<div class="input-group">
-         <label for="Write About Us">Write About Us</label>
-             <input
-                    type="text" th:field="*{about}" class="form-control" id="about"
-                    placeholder="Write About"> <span
-                    th:if="${#fields.hasErrors('about')}" th:errors="*{about}"
-                    class="text-danger"></span>
-            </div>
-
-            <div class="input-group">
-         <label for="Write About Us">Interview Status</label>
-            
-                <select id="status" name="status">
-
-                    <option value="Select">Select</option>
-                    <option value="Ready to take Interview">Ready to take
-                        Interview</option>
-                    <option value="Interview Completed">Interview Completed</option>
-                    <option value="Postponed Interview">Postponed Interview</option>
-                    <option value="Not eligible">Not eligible</option>
-                    <option value="Selected">Selected</option>
-                </select>
-            </div>
-        <div class="btns-group">
-          <a href="#" class="btn btn-prev">Previous</a>
-          <input type="submit" value="Submit" class="btn" />
-        </div>
-      </div>
-    </form>
-
-
-
-
-
-
-
-
-<!--  -->
-
-
-
+                   
+                   <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
                   </div>
                 </div>
-              </div>  </div>
-                </div>
-              </div>
-            </div>
-          </div><!--  -->
+                <div class="form-step">
+                  <!--  -->
+                  <div class="input-group">
 
-         <!--  <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard template</a> from Bootstrapdash.com</span>
-            </div>
-          </footer> -->
-        </div>
-        <!-- main-panel ends -->
+                    <div class="input-group">
+                     <label>Experience</label>
+                     <select
+                     id="experience" name="experience">
+
+                     <option value="Select">Select</option>
+
+                     <option value="Fresher">Fresher</option>
+                     <option value="one year">one year</option>
+                     <option value="Two years">Two years</option>
+                     <option value="Three years">Three years</option>
+
+                     <option value="Four Above">Four Above</option>
+                   </select>
+                 </div>
+                 <label for="Write About Us">Write About Us</label>
+                 <input
+                 type="text" th:field="*{about}" class="form-control" id="about"
+                 placeholder="Write About"> <span
+                 th:if="${#fields.hasErrors('about')}" th:errors="*{about}"
+                 class="text-danger"></span>
+               </div>
+
+               <div class="input-group">
+                 <label for="Write About Us">Interview Status</label>
+                 
+                 <select id="status" name="status">
+
+                  <option value="Select">Select</option>
+                  <option value="Ready to take Interview">Ready to take
+                  Interview</option>
+                  <option value="Interview Completed">Interview Completed</option>
+                  <option value="Postponed Interview">Postponed Interview</option>
+                  <option value="Not eligible">Not eligible</option>
+                  <option value="Selected">Selected</option>
+                </select>
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <input type="submit" value="Submit" class="btn" />
+              </div>
+            </div></div>
+          </form>
+
+
+
+          <!-- form ends here  -->
+
+
+        </div> 
       </div>
-      <!-- page-body-wrapper ends -->
+      <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+          <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard template</a> from Bootstrapdash.com</span>
+        </div>
+      </footer>
     </div>
-    <!-- container-scroller -->
-    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="../../assets/vendors/select2/select2.min.js"></script>
-    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-    <script src="../../assets/js/off-canvas.js"></script>
-    <script src="../../assets/js/hoverable-collapse.js"></script>
-    <script src="../../assets/js/misc.js"></script>
-    <script src="../../assets/js/file-upload.js"></script>
-    <script src="../../assets/js/typeahead.js"></script>
-    <script src="../../assets/js/select2.js"></script>
-  </body>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+<script src="../../assets/vendors/select2/select2.min.js"></script>
+<script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+<script src="../../assets/js/off-canvas.js"></script>
+<script src="../../assets/js/hoverable-collapse.js"></script>
+<script src="../../assets/js/misc.js"></script>
+<script src="../../assets/js/file-upload.js"></script>
+<script src="../../assets/js/typeahead.js"></script>
+<script src="../../assets/js/select2.js"></script>
+</body>
 </html>
